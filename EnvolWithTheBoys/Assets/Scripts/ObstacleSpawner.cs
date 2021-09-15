@@ -1,0 +1,32 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ObstacleSpawner : MonoBehaviour
+{
+    public float speed = 10;
+    private Rigidbody2D rb;
+    private Vector2 screenBounds;
+    private float TimeDestroy = 5;
+
+    
+    // Start is called before the first frame update
+    void Start()
+    {
+        rb = this.GetComponent<Rigidbody2D>();
+        rb.velocity = new Vector2(-speed, 0);
+        screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
+
+        TimeDestroy = 5;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        TimeDestroy -= Time.deltaTime;
+        if(TimeDestroy <= 0)
+        {
+            Destroy(this.gameObject);
+        }
+    }
+}
