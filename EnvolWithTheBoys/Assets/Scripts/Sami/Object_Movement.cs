@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Obstacle : MonoBehaviour
+public class Object_Movement : MonoBehaviour
 {
     public float movementSpeed = 5f;
     public float movementModif = 0.1f;
