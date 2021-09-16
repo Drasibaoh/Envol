@@ -7,7 +7,7 @@ public class ObstacleSpawner : MonoBehaviour
     public float speed = 10;
     private Rigidbody2D rb;
     private Vector2 screenBounds;
-    private float TimeDestroy = 5;
+    private float TimeDestroy = 2;
 
     
     // Start is called before the first frame update
@@ -17,7 +17,7 @@ public class ObstacleSpawner : MonoBehaviour
         rb.velocity = new Vector2(-speed, 0);
         screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
 
-        TimeDestroy = 5;
+        TimeDestroy = 2;
     }
 
     // Update is called once per frame

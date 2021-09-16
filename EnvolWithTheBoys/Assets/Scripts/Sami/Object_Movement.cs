@@ -10,6 +10,10 @@ public class Object_Movement : MonoBehaviour
     private Vector3 positionMovement;
     public Rigidbody2D o_rigidBody;
 
+    private void Start()
+    {
+        GetComponent<Rigidbody2D>();
+    }
     void FixedUpdate()
     {
         positionMovement.x -= movementModif;
