@@ -15,4 +15,14 @@ public class ButtonManager : MonoBehaviour
         Application.Quit();
         Debug.Log("Bye");
     }
+
+    public void Return()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void Credits()
+    {
+        SceneManager.LoadScene(2);
+    }
 }
