@@ -18,7 +18,7 @@ public class DeployObstacle : MonoBehaviour
     private void spawnEnemy()
     {
         GameObject a = Instantiate(obstaclePrefab) as GameObject;
-        a.transform.position = new Vector2(screenBounds.x * -2, Random.Range(-screenBounds.y, screenBounds.y));
+        a.transform.position = new Vector2(screenBounds.x * -2, Random.Range(-screenBounds.y + 2.5f, screenBounds.y - 1f));
     }
 
     IEnumerator obstacleWave()

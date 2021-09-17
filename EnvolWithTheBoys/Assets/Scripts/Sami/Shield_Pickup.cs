@@ -26,7 +26,7 @@ public class Shield_Pickup : MonoBehaviour
         if(collision.CompareTag("Shield") && hasShield == false)
         {
             hasShield = true;
-        
+            Destroy(collision.gameObject);
         }
     }
 

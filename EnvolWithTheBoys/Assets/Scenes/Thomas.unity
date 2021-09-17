@@ -803,7 +803,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstaclePrefab: {fileID: 1685387400856044822, guid: 0206015f424d8a141be0eb46c2b7ada2,
     type: 3}
-  respawnTime: 30
+  respawnTime: 12
 --- !u!1 &1793063475
 GameObject:
   m_ObjectHideFlags: 0
