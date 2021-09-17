@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1685387400856044811}
   - component: {fileID: 1685387400856044808}
   - component: {fileID: 1685387400856044809}
+  - component: {fileID: 7010519758736722470}
   m_Layer: 0
   m_Name: Shield_Pickup
   m_TagString: Shield
@@ -72,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 86fe6605000652447a828e61a29d6a0b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -136,3 +137,16 @@ CircleCollider2D:
   m_Offset: {x: 0.3, y: 1.09}
   serializedVersion: 2
   m_Radius: 6.15
+--- !u!114 &7010519758736722470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685387400856044822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8565954533f83584f839dcd37810cd19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
