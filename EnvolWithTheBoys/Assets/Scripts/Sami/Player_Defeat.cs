@@ -9,8 +9,7 @@ public class Player_Defeat : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Obstacle"))
         {
-            Debug.Log("E");
-            //SceneManager.LoadScene(2);
+            SceneManager.LoadScene(0);
         }
     }
 }
